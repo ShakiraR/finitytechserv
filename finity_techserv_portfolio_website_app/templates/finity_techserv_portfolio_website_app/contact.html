@@ -1,0 +1,114 @@
+{% extends 'finity_techserv_portfolio_website_app/base1.html' %}
+{% load static %}
+
+{% block stylesheets %}
+
+{% endblock stylesheets %}
+
+{% block headscript %}
+{% endblock headscript %}
+
+{% block content %}
+<main class="">
+                <!-- visual/banner of the page -->
+                <section class="visual">
+                    <div class="visual-inner contact-banner dark-overlay parallax" data-stellar-background-ratio="0.55">
+                        <div class="centered">
+                            <div class="container">
+                                <div class="visual-text visual-center">
+                                    <h1 class="visual-title visual-sub-title">Contact Us</h1>
+                                    <div class="breadcrumb-block">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="{% url 'finity_techserv_portfolio_website_app:index' %}"> Home </a></li>
+                                            <li class="breadcrumb-item active"> Contact Us </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--/visual/banner of the page -->
+                <!-- main content wrapper -->
+                <div class="content-wrapper">
+                    <section class="content-block pb-50">
+                        <div class="container">
+                            <div class="contact-container">
+                                <h6 class="content-title contact-title">GET IN TOUCH WITH US</h6>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <!-- contact form -->
+                                        <form action="#" method="post" id="contact_form" class="waituk_contact-form">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="text" placeholder="FIRST NAME *" id="con_fname" name="con_fname" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="text" placeholder="LAST NAME *" id="con_lname" name="con_lname" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="tel" placeholder="PHONE NUMBER" id="con_phone" name="con_phone" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="email" placeholder="EMAIL ADDRESS *" id="con_email" name="con_email" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea class="form-control" placeholder="MESSAGE *" id="con_message" name="con_message"></textarea>
+                                            </div>
+                                            <div class="btn-container">
+                                                <button id="btn_sent" class="btn btn-primary btn-arrow">SEND MESSAGE</button>
+                                                <p id="error_message"> </p>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-6 col-xl-5 offset-xl-1">
+                                        <div class="info-slot">
+                                            <div class="icon"><span class="custom-icon-map-marker"></span></div>
+                                            <div class="text">
+                                                <ul class="content-list contact-list">
+                                                    <li> <a href="https://goo.gl/maps/4j8ppZfoNwaMCns59">301, Divine Jalpa,Bhatt Chawl,<br> Mini Zaveri Bazaar, Mhatre Wadi,<br> Borivali(west), Mumbai, 400092</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="info-slot">
+                                            <div class="icon"><span class="custom-icon-headset"></span></div>
+                                            <div class="text">
+                                                <ul class="content-list contact-list">
+                                                    <li><span class="label-text">Contact No.</span> <a href="tel:7045678009">7045678009</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="info-slot">
+                                            <div class="icon"><span class="custom-icon-message"></span></div>
+                                            <div class="text">
+                                                <ul class="content-list contact-list">
+                                                    <li><a href="mailto:finitytechserv@gmail.com">finitytechserv@gmail.com</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="map-holder embed-responsive-21by9">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d470.9111205782757!2d72.8531845!3d19.2262342!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b14c2d9d15a5%3A0x5397df407a8498e5!2sDivine%20Jalpa!5e0!3m2!1sen!2sin!4v1573037359440!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <!--/main content wrapper -->
+            </main>
+{% endblock %}
+
+{% block script %}
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'finity_techserv_portfolio_website_app/base2.html' %}
+{% load static %}
+
+{% block stylesheets %}
+
+{% endblock stylesheets %}
+
+{% block headscript %}
+{% endblock headscript %}
+
+{% block content %}
+<main>
+    <!-- main content wrapper -->
+    <div class="content-wrapper">
+        <div class="row  no-gutters">
+            <div class="col-lg-6 hidden-md-down">
+                <div class="bg-stretch img-wrap">
+                    <img src="{% static  'finity_techserv_portfolio_website_app/img/visual-12.jpg' %}" alt="images">
+                </div>
+            </div>
+            <div class="col-lg-6 signup-block">
+                <div class="signup-wrap text-center">
+                    <div class="inner-wrap"><br><br><br><br>
+                        <div class="circular-icon bottom-space"><i class="icon-sign-in"></i></div>
+                        <form action="#" method="post" id="contact_form" class="waituk_contact-form signup-form">
+                            <h2 class="bottom-space">User Login</h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="USERNAME OR EMAIL" id="con_uname" name="con_fname" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="password" placeholder="PASSWORD" id="con_password" name="con_lname" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="waituk_select-box">
+                                        <div class="waituk_select-box-default square-box">
+                                            <input type="checkbox" name="checkbox" id="checkbox11">
+                                            <label for="checkbox11" class="m-0">REMEMBER ME</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><a href="#">Forgot Password ?</a></p>
+                                </div>
+                            </div>
+                            <div class="btn-container mb-3  mb-xl-3 mt-xl-5 mt-lg-2">
+                                <button id="btn_sent" class="btn btn-primary has-radius-small">Login</button>
+                            </div>
+                            <p>Don't have an account yet?
+                                <a href="{% url 'finity_techserv_portfolio_website_app:signup' %}"> Register New Account. </a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/main content wrapper -->
+</main>
+{% endblock %}
+
+{% block script %}
+{% endblock %}

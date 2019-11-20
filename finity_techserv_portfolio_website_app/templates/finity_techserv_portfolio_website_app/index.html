@@ -1,0 +1,598 @@
+{% extends 'finity_techserv_portfolio_website_app/base1.html' %}
+{% load static %}
+
+{% block stylesheets %}
+<style>
+        .centered {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .centered>h2,
+        .centered>h4 {
+            color: White;
+        }
+    </style>
+{% endblock stylesheets %}
+
+{% block headscript %}
+{% endblock headscript %}
+
+{% block content %}
+
+<main>
+    <!-- visual/banner of the page -->
+    <div class="banner banner-home">
+        <!-- revolution slider starts -->
+        <div id="rev_slider_279_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="restaurant-header" style="margin:0px auto;background-color:#fff;padding:0px;margin-top:0px;margin-bottom:0px;">
+            <div id="rev_slider_70_1" class="rev_slider fullscreenabanner" style="display:none;" data-version="5.1.4">
+                <ul>
+                    <li class="slider-color-schema-dark" data-index="rs-2" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1000" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
+                        <!-- main image for revolution slider -->
+                        <img src="{% static 'finity_techserv_portfolio_website_app/img/banner9.jpg' %}" alt="image description" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-bgfit="cover" data-no-retina>
+                        <div class="centered">
+                            <h2> WEB. SOFTWARE. DIGITAL.</h2><br>
+                            <h4>We could never learn to solve errors and be patient if page was always found</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--/visual/banner of the page -->
+    <!-- main content wrapper -->
+    <div class="content-wrapper">
+        <section class="content-block">
+            <div class="container">
+                <div class="row multiple-row v-align-row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="col-wrap">
+                            <div class="block-heading">
+                                <h3 class="block-top-heading">WHAT WE DO</h3>
+                                <h2 class="block-main-heading">EXPERTS</h2>
+                                <span class="block-sub-heading">We build digital solutions.</span>
+                                <div class="divider"><img src="{% static 'finity_techserv_portfolio_website_app/img/divider.png' %}" alt="images description"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="col-wrap">
+                            <div class="ico-box bg-gray-light has-radius-medium">
+                                <div class="icon">
+                                    <img src="{% static 'finity_techserv_portfolio_website_app/img/icons/computer4.png' %}">
+                                </div>
+                                <h4 class="content-title"><a href="#">Web Design & Development</a></h4>
+                                <div class="des">
+                                    <p>In today's Mobile Friendly world, mobiles are closer than any desktop, and hence a website that adapts to different devices is a need of the hour.</p>
+                                </div>
+                                <div class="link-holder">
+                                    <a class="link-more" href="{% url 'finity_techserv_portfolio_website_app:service_details' %}">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="col-wrap">
+                            <div class="ico-box bg-gray-light has-radius-medium">
+                                <div class="icon">
+                                    <img src="{% static 'finity_techserv_portfolio_website_app/img/icons/programming1.png' %}">
+                                </div>
+                                <h4 class="content-title"><a href="#">Customize Business Software</a></h4>
+                                <div class="des">
+                                    <p>To manage your business data and track the extensive amount of information generated is a big task. A data management desktop application is all you need</p>
+                                </div>
+                                <div class="link-holder">
+                                    <a class="link-more" href="{% url 'finity_techserv_portfolio_website_app:service_details' %}">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="col-wrap">
+                            <div class="ico-box bg-gray-light has-radius-medium">
+                                <div class="icon">
+                                    <img src="{% static 'finity_techserv_portfolio_website_app/img/icons/ecom.png' %}">
+                                </div>
+                                <h4 class="content-title"><a href="#">E- Commerce Development</a></h4>
+                                <div class="des">
+                                    <p>With a growing online market trend, sale, resale and ample opportunities in global and local E-business, E-commerce allows you to do your product branding</p>
+                                </div>
+                                <div class="link-holder">
+                                    <a class="link-more" href="{% url 'finity_techserv_portfolio_website_app:service_details' %}">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="col-wrap">
+                            <div class="ico-box bg-gray-light has-radius-medium">
+                                <div class="icon">
+                                    <img src="{% static 'finity_techserv_portfolio_website_app/img/icons/appdevelopment.png' %}">
+                                </div>
+                                <h4 class="content-title"><a href="#">Mobile App Development</a></h4>
+                                <div class="des">
+                                    <p>Got a website but need an integrated mobile framework? Want to launch your business service that is portable, easy and fast? Then get your business app</p>
+                                </div>
+                                <div class="link-holder">
+                                    <a class="link-more" href="{% url 'finity_techserv_portfolio_website_app:service_details' %}">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="col-wrap">
+                            <div class="ico-box bg-gray-light has-radius-medium">
+                                <div class="icon">
+                                    <img src="{% static 'finity_techserv_portfolio_website_app/img/icons/datascience.png' %}">
+                                </div>
+                                <h4 class="content-title"><a href="#">Data Science & Data Analysis</a></h4>
+                                <div class="des">
+                                    <p>With the power of machine learning , we provide analytical reports which help you take crucial business decisions for your growing business</p>
+                                </div>
+                                <div class="link-holder">
+                                    <a class="link-more" href="{% url 'finity_techserv_portfolio_website_app:service_details' %}">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="col-wrap">
+                            <div class="ico-box bg-gray-light has-radius-medium">
+                                <div class="icon">
+                                    <img src="{% static 'finity_techserv_portfolio_website_app/img/icons/datascience.png' %}">
+                                </div>
+                                <h4 class="content-title"><a href="#">Wordpress</a></h4>
+                                <div class="des">
+                                    <p>WordPress gives you a seamless way to maintain your website once developed. With a vast number of themes, customizable layouts, </p>
+                                </div>
+                                <div class="link-holder">
+                                    <a class="link-more" href="{% url 'finity_techserv_portfolio_website_app:service_details' %}">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="col-wrap">
+                            <div class="ico-box bg-gray-light has-radius-medium">
+                                <div class="icon">
+                                    <img src="{% static 'finity_techserv_portfolio_website_app/img/icons/datascience.png' %}">
+                                </div>
+                                <h4 class="content-title"><a href="#">Graphic Design</a></h4>
+                                <div class="des">
+                                    <p>A Brand's Logo is the first to be noticed giving the brand its own identity. To give your brand an aesthetically pleasing and catchy look, we help you </p>
+                                </div>
+                                <div class="link-holder">
+                                    <a class="link-more" href="{% url 'finity_techserv_portfolio_website_app:service_details' %}">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-4 col-md-6">
+                        <div class="col-wrap">
+                            <div class="ico-box bg-gray-light has-radius-medium">
+                                <div class="icon">
+                                    <img src="{% static 'finity_techserv_portfolio_website_app/img/icons/datascience.png' %}">
+                                </div>
+                                <h4 class="content-title"><a href="#">Digital Marketting</a></h4>
+                                <div class="des">
+                                    <p>Looking to Kick-start your business or make it famous online? Finity Software Solutions is a one-stop Destination to make your Web presence felt </p>
+                                </div>
+                                <div class="link-holder">
+                                    <a class="link-more" href="{% url 'finity_techserv_portfolio_website_app:service_details' %}">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-block quotation-block black-overlay-6 parallax" data-stellar-background-ratio="0.55">
+            <div class="container">
+                <div class="inner-wrapper">
+                    <h3 class="block-top-heading text-white">BEST EVER DESIGN</h3>
+                    <h2 class="text-white">Time to enhance your web presence!</h2>
+                    <div class="btn-container">
+                        <a href="#" class="btn btn-primary has-radius-small">GET A QUOTE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-block portfolio-block" id="container">
+            <div class="bottom-space text-center text-uppercase">
+                <h2>The Work</h2>
+            </div>
+            <ul class="filter-nav text-center button-group filter-button-group">
+                <li>
+                    <button data-filter="*">ALL</button>
+                </li>
+                <li>
+                    <button data-filter=".ui">Web Design & Development</button>
+                </li>
+                <li>
+                    <button data-filter=".programming">Business Customize Softwares</button>
+                </li>
+                <li>
+                    <button data-filter=".photography">Mobile App Development</button>
+                </li>
+                <li>
+                    <button data-filter=".ecommerce">E- Commerce Development</button>
+                </li>
+            </ul>
+            <div class="row grid">
+                <div class="gallery-item col-lg-4 col-md-6 ui photography">
+                    <figure class="picture-item img-block shine-effect image-zoom port-v2">
+                        <img src="{% static 'finity_techserv_portfolio_website_app/img/web.jpg' %}" alt="images description">
+                        <figcaption>
+                            <div class="link-box">
+                                <a href="#">
+                                    <span class="icon-heart"><span class="sr-only">&amp;</span></span>
+                                </a>
+                                <a href="#">
+                                    <span class="icon-link"><span class="sr-only">&amp;</span></span>
+                                </a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="gallery-item col-lg-4 col-md-6 photography programming">
+                    <figure class="picture-item img-block shine-effect image-zoom port-v2">
+                        <img src="{% static 'finity_techserv_portfolio_website_app/img/code.jpg' %}" alt="images description">
+                        <figcaption>
+                            <div class="link-box">
+                                <a href="#">
+                                    <span class="icon-heart"><span class="sr-only">&amp;</span></span>
+                                </a>
+                                <a href="#">
+                                    <span class="icon-link"><span class="sr-only">&amp;</span></span>
+                                </a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="gallery-item col-lg-4 col-md-6 ui photography">
+                    <figure class="picture-item img-block shine-effect image-zoom port-v2">
+                        <img src="{% static 'finity_techserv_portfolio_website_app/img/mobileapp.jpg' %}" alt="images description">
+                        <figcaption>
+                            <div class="link-box">
+                                <a href="#">
+                                    <span class="icon-heart"><span class="sr-only">&amp;</span></span>
+                                </a>
+                                <a href="#">
+                                    <span class="icon-link"><span class="sr-only">&amp;</span></span>
+                                </a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="gallery-item col-lg-4 col-md-6 ecommerce programming">
+                    <figure class="picture-item img-block shine-effect image-zoom port-v2">
+                        <img src="{% static 'finity_techserv_portfolio_website_app/img/ecom.jpg' %}" alt="images description">
+                        <figcaption>
+                            <div class="link-box">
+                                <a href="#">
+                                    <span class="icon-heart"><span class="sr-only">&amp;</span></span>
+                                </a>
+                                <a href="#">
+                                    <span class="icon-link"><span class="sr-only">&amp;</span></span>
+                                </a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="gallery-item col-lg-4 col-md-6 programming ecommerce">
+                    <figure class="picture-item img-block shine-effect image-zoom port-v2">
+                        <img src="{% static 'finity_techserv_portfolio_website_app/img/mobileecom.jpg' %}" alt="images description">
+                        <figcaption>
+                            <div class="link-box">
+                                <a href="#">
+                                    <span class="icon-heart"><span class="sr-only">&amp;</span></span>
+                                </a>
+                                <a href="#">
+                                    <span class="icon-link"><span class="sr-only">&amp;</span></span>
+                                </a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="gallery-item col-lg-4 col-md-6 ecommerce ui">
+                    <figure class="picture-item img-block shine-effect image-zoom port-v2">
+                        <img src="{% static 'finity_techserv_portfolio_website_app/img/software.jpg' %}" alt="images description">
+                        <figcaption>
+                            <div class="link-box">
+                                <a href="#">
+                                    <span class="icon-heart"><span class="sr-only">&amp;</span></span>
+                                </a>
+                                <a href="#">
+                                    <span class="icon-link"><span class="sr-only">&amp;</span></span>
+                                </a>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="content-block pt-0">
+            <div class="container">
+                <div class="block-heading bottom-space">
+                    <h3 class="block-top-heading">THE LIFE SIZE</h3>
+                    <h2 class="block-main-heading">BRAND STORY</h2>
+                    <span class="block-sub-heading">View multiple content block layouts under features section.</span>
+                    <div class="divider"><img src="{% static 'finity_techserv_portfolio_website_app/img/divider.png' %}" alt="images description"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="bottom-space-small-only">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaal qua. Ut enim ad minim veniam, quis nostrud exercitation ulla mco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culp a qui officia deserunt mollit anim id est laborum. Sed ut per spiciatis unde omnis iste natus error sit voluptatem accusan tium doloremque laudantium, totam rem aperiam, eaque ip </p>
+                            <div class="btn-container top-m-space">
+                                <a href="#" class="btn btn-black has-radius-small">VIEW PROJECTS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bottom-s-space">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="content-links">
+                                    <li><a href="#"> WEB & INTERACTIVE DESIGN</a></li>
+                                    <li><a href="#">CONTENT MANAGEMENT</a></li>
+                                    <li><a href="#">WEB APPLICATIONS</a></li>
+                                    <li><a href="#">SOFTWARE DEVELOPMENT</a></li>
+                                    <li><a href="#">ECOMMERCE SOLUTIONS</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="content-links">
+                                    <li><a href="#">DATABASE DESIGN</a></li>
+                                    <li><a href="#">TECHNICAL DOCUMENTATION</a></li>
+                                    <li><a href="#">SOFTWARE ARCHITECTURE</a></li>
+                                    <li><a href="#">SEARCH OPTIMIZATION</a></li>
+                                    <li><a href="#">WEB PROMOTIONS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="work-section" class="content-block work-block">
+            <div class="bg-stretch">
+                <img src="{% static 'finity_techserv_portfolio_website_app/img/culture.jpg' %}" alt="">
+            </div>
+            <div class="container">
+                <div class="block-heading bottom-space text-center">
+                    <h3 class="block-top-heading">WORK PLACE</h3>
+                    <h2 class="block-main-heading">THE CULTURE</h2>
+                    <span class="block-sub-heading">Lovely people with nack for design creativity flourish here.</span>
+                    <div class="divider"><img src="{% static 'finity_techserv_portfolio_website_app/img/divider.png' %}" alt="images description"></div>
+                </div>
+                <div class="description text-center container-md">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="content-block">
+            <div class="container">
+                <div class="block-heading bottom-space">
+                    <h3 class="block-top-heading">WHO WE ARE</h3>
+                    <h2 class="block-main-heading">TEAM WORK</h2>
+                    <span class="block-sub-heading">We really love what we do & our work on every project truly reflects that.</span>
+                    <div class="divider"><img src="{% static 'finity_techserv_portfolio_website_app/img/divider.png' %}" alt="images description"></div>
+                </div>
+                <div class="team-container">
+                    <div class="owl-carousel group-slide bottom-m-space">
+                        <div class="slide-item">
+                            <figure class="team-box caption-fade-up">
+                                <div class="img-block rev-gray-scale">
+                                    <img src="{% static 'finity_techserv_portfolio_website_app/img/team-02.jpg' %}" alt="images description">
+                                </div>
+                                <figcaption class="text-right">
+                                    <strong class="content-title mb-0">JASON STRATHAM</strong>
+                                    <span class="sub">UI/UX GURU</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="slide-item">
+                            <figure class="team-box caption-fade-up">
+                                <div class="img-block rev-gray-scale">
+                                    <img src="{% static 'finity_techserv_portfolio_website_app/img/team-01.jpg' %}" alt="images description">
+                                </div>
+                                <figcaption class="text-right">
+                                    <strong class="content-title mb-0">JESSICA FIZOVIC</strong>
+                                    <span class="sub">UI/UX GURU</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="slide-item">
+                            <figure class="team-box caption-fade-up">
+                                <div class="img-block rev-gray-scale">
+                                    <img src="{% static 'finity_techserv_portfolio_website_app/img/team-03.jpg' %}" alt="images description">
+                                </div>
+                                <figcaption class="text-right">
+                                    <strong class="content-title mb-0">JAMES NASS</strong>
+                                    <span class="sub">UI/UX GURU</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="slide-item">
+                            <figure class="team-box caption-fade-up">
+                                <div class="img-block rev-gray-scale">
+                                    <img src="{% static 'finity_techserv_portfolio_website_app/img/team-02.jpg' %}" alt="images description">
+                                </div>
+                                <figcaption class="text-right">
+                                    <strong class="content-title mb-0">STEVE MANNING</strong>
+                                    <span class="sub">UI/UX GURU</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="slide-item">
+                            <figure class="team-box caption-fade-up">
+                                <div class="img-block rev-gray-scale">
+                                    <img src="{% static 'finity_techserv_portfolio_website_app/img/team-01.jpg' %}" alt="images description">
+                                </div>
+                                <figcaption class="text-right">
+                                    <strong class="content-title mb-0">JESSICA FIZOVIC</strong>
+                                    <span class="sub">UI/UX GURU</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <p> Martin loves gossiping code on his iPhone. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </div>
+            </div>
+        </section>
+        <section class="content-block count-block text-center p-0 parallax" data-stellar-background-ratio="0.55">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="col-wrap">
+                            <div class="icon">
+                                <span class="custom-icon-projects"></span>
+                            </div>
+                            <h3 class="number">505</h3>
+                            <div class="text text-uppercase">ON GOING PROJECTS</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="col-wrap">
+                            <div class="icon">
+                                <span class="custom-icon-smile"></span>
+                            </div>
+                            <h3 class="number">220</h3>
+                            <div class="text text-uppercase">SATISFIED CLIENTS</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="col-wrap">
+                            <div class="icon">
+                                <span class="custom-icon-award"></span>
+                            </div>
+                            <h3 class="number">720</h3>
+                            <div class="text text-uppercase"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="col-wrap">
+                            <div class="icon">
+                                <span class="custom-icon-celebrate"></span>
+                            </div>
+                            <h3 class="number">707</h3>
+                            <div class="text text-uppercase">COMPLETE PROJECTS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-block bg-gray-light">
+            <div class="container">
+                <div class="block-heading bottom-space text-center">
+                    <h3 class="block-top-heading">HEAR FROM</h3>
+                    <h2 class="block-main-heading">TESTIMONIALS</h2>
+                    <span class="block-sub-heading">We always listen to our clients.</span>
+                    <div class="divider"><img src="{% static 'finity_techserv_portfolio_website_app/img/divider.png' %}" alt="images description"></div>
+                </div>
+                <div class="testimonial-container text-center">
+                    <div class="owl-carousel testimonial-slide" id="waituk-owl-slide-3">
+                        <div class="slide-item">
+                            <div class="team-wrap">
+                                <div class="img-block">
+                                    <img src="{% static 'finity_techserv_portfolio_website_app/img/people-01.jpg' %}" alt="images description">
+                                </div>
+                                <div class="text-wrap">
+                                    <h2>Natalie Fullick</h2>
+                                    <span class="designation bottom-m-space">CEO - ENVATO INC.</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <div class="team-wrap">
+                                <div class="img-block">
+                                    <img src="{% static 'finity_techserv_portfolio_website_app/img/people-02.jpg' %}" alt="images description">
+                                </div>
+                                <div class="text-wrap">
+                                    <h2>Dwayne Desouza</h2>
+                                    <span class="designation bottom-m-space">CEO - Gokruze</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <div class="team-wrap">
+                                <div class="img-block">
+                                    <img src="{% static 'finity_techserv_portfolio_website_app/img/people-03.jpg' %}" alt="images description">
+                                </div>
+                                <div class="text-wrap">
+                                    <h2>Shailendra Avasthi</h2>
+                                    <span class="designation bottom-m-space">SSPN Fin</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <div class="team-wrap">
+                                <div class="img-block">
+                                    <img src="{% static 'finity_techserv_portfolio_website_app/img/people-02.jpg' %}" alt="images description">
+                                </div>
+                                <div class="text-wrap">
+                                    <h2>Natalie Fullick</h2>
+                                    <span class="designation bottom-m-space">CEO - ENVATO INC.</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <div class="team-wrap">
+                                <div class="img-block">
+                                    <img src="{% static 'finity_techserv_portfolio_website_app/img/people-01.jpg' %}" alt="images description">
+                                </div>
+                                <div class="text-wrap">
+                                    <h2>Natalie Fullick</h2>
+                                    <span class="designation bottom-m-space">CEO - ENVATO INC.</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="content-block">
+            <div class="container">
+                <div class="logo-container">
+                    <div class="owl-carousel logo-slide" id="waituk-owl-slide-4">
+                        <div class="slide-item">
+                            <img src="{% static 'finity_techserv_portfolio_website_app/img/GoKruze_Logo.png' %}" alt="images description">
+                        </div>
+                        <div class="slide-item">
+                            <img src="{% static 'finity_techserv_portfolio_website_app/img/3m.png' %}" alt="images description">
+                        </div>
+                        <div class="slide-item">
+                            <img src="{% static 'finity_techserv_portfolio_website_app/img/aaron.png' %}" alt="images description">
+                        </div>
+                        <div class="slide-item">
+                            <img src="{% static 'finity_techserv_portfolio_website_app/img/joymaker.png' %}" alt="images description">
+                        </div>
+                        <div class="slide-item">
+                            <img src="{% static 'finity_techserv_portfolio_website_app/img/finity_rnd_labs_png.png' %}" alt="images description">
+                        </div>
+                        <div class="slide-item">
+                            <img src="{% static 'finity_techserv_portfolio_website_app/img/logo_sspn.png' %}" alt="images description">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <!--/main content wrapper -->
+</main>
+
+{% endblock %}
+
+{% block script %}
+{% endblock %}////

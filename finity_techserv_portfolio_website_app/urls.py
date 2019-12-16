@@ -14,11 +14,11 @@ urlpatterns = [
     #Services url
     path('services/',views.services,name='services'),
 
-    #Service_details url
-    path('service_details/',views.service_details,name='service_details'),
+    #contact url
+    path('contact/',views.ContactForm,name='contact'),
 
     #contact url
-    path('contact/',views.contact,name='contact'),
+    path('contactsubmit/',views.ContactSubmit,name='contactsubmit'),
 
     #signin url
     path('signin/',views.signin,name='signin'),
@@ -27,7 +27,10 @@ urlpatterns = [
     path('signup/',views.signup,name='signup'),
 
     #submit url
-    path('submit/',views.submit,name='submit'),
+    path('careersubmit/',views.careersubmit,name='careersubmit'),
+
+    #submit url
+    path('career/',views.careerform,name='career'),
 
 
     

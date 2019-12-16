@@ -1,0 +1,319 @@
+{% extends 'finity_techserv_portfolio_website_app/base_1.html' %}
+{% load static %}
+
+{% block stylesheets %}
+<style>
+       html {
+           scroll-behavior: smooth;
+       }
+
+       .card-header {
+           background: #336699;
+       }
+
+       .designation {
+           font-size: 12px;
+           color: #fff;
+       }
+
+       b {
+           color: #ff3333;
+       }
+
+       .abc {
+           color: #fff;
+           padding-top: 25px;
+       }
+
+       ul li {
+           color: #000;
+       }
+       .formbutton {
+           margin-top: 7px;
+       }
+       
+       .formbutton:hover {
+           margin-top: 15px;
+       }
+   </style>
+
+{% endblock stylesheets %}
+
+{% block headscript %}
+{% endblock headscript %}
+
+{% block content %}
+<main>
+    <!-- visual/banner of the page -->
+    <section class="visual">
+        <div class="visual-inner career-banner parallax" data-stellar-background-ratio="0.55">
+            <div class="centered">
+                <div class="container">
+                    <div class="visual-text visual-center">
+                        <h1 class="visual-title visual-sub-title">Life @ Finity</h1>
+                        <div class="breadcrumb-block">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{% url 'finity_techserv_portfolio_website_app:index' %}"> Home </a></li>
+                                <li class="breadcrumb-item active">Career </li><br>
+                            </ol>
+                            <br>
+                            <a href="#open" class="btn has-radius-huge" style="background: #ff3333;border-color: #ff3333;color: #fff">Current Openings<span class="c-ripple js-ripple"><span class="c-ripple__circle"></span></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="col-lg-12 less-wide">
+        <div class="">
+            <article class="blog-article">
+                <div class="blog-desc pt-5">
+                    <div class="blog-img">
+                        <div class="image-wrap">
+                            <figure class="">
+                                <center>
+                                    <h2>Web Design & Development</h2>
+                                </center>
+                            </figure>
+                        </div>
+                    </div>
+                    <p style="text-align: center">Web design and development can be said to be the backbone of any business. At Finity, we work to strengthen online businesses. The team at Finity is seasoned in website design and development which caters to whatever your needs, budget and vision endure. We design functional interfaces for an engaging and secure digital experience. Each website relies on inspired and interactive designs that help in increasing the user traffic.</p>
+
+                </div>
+            </article>
+        </div>
+    </div>
+
+
+    <div class="content-wrapper" id="open">
+        <section class="content-block">
+            <div class="container">
+                <center>
+                    <h2>Current Opening</h2>
+                </center>
+
+                <!-- Grid row -->
+                <div class="row d-flex ">
+                    <!-- Grid column -->
+                    <div class="col-md-12 col-xl-12">
+
+                        <!--Accordion wrapper-->
+                        <div class="accordion md-accordion accordion-blocks" id="accordionEx7" role="tablist" aria-multiselectable="true">
+
+                            <!-- Accordion card -->
+                            <div class="card">
+
+                                <!-- Card header -->
+                                <div class="card-header rgba-stylish-strong z-depth-1 mb-1" role="tab" id="heading1">
+                                    <a data-toggle="collapse" data-parent="#accordionEx7" href="#collapse1" aria-expanded="true" aria-controls="collapse1" style="text-decoration: none;">
+                                        <h3 class="mb-0 white-text text-uppercase font-thin abc">
+                                            Graphic Designer
+                                            <p class="designation"> <br>executive/design<img src="{% static 'finity_techserv_portfolio_website_app/img/icons/dw.png' %}" style="float: right;height=30px;width:20px;color: #000"></p>
+
+                                        </h3>
+                                    </a>
+                                </div>
+
+                                <!-- Card body -->
+                                <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="heading1" data-parent="#accordionEx7">
+                                    <div class="card-body mb-1 rgba-grey-light white-text">
+                                        <div class="container">
+                                            <button class="btn btn-sm formbutton" style="background: #ff3333;border-color: #ff3333;color: #fff ;float: right;" data-target="#exampleModal" data-toggle="modal">Apply Now<span class="c-ripple js-ripple"><span class="c-ripple__circle"></span></span></button>
+
+                                            <b>About the role</b>
+                                            <ul>
+                                                <li>Designing experience into digital or social media is must</li>
+                                                <li>Should be well versed in Adobe Creative Suite</li>
+                                                <li>Should be extremely creative</li>
+                                                <li>Should be able to adhere to timelines</li>
+                                                <li>Should be able to coordinate with the internal teams for understanding client briefs and requirements</li>
+                                            </ul>
+                                            <hr>
+                                            <b>Preferred Qualifications</b>
+                                            <ul>
+                                                <li>Diploma/Certification in designing; professional courses in design tools</li>
+                                            </ul>
+                                            <hr>
+                                            <b>Experience</b>
+                                            <ul>
+                                                <li>1-2 years</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion card -->
+
+                            <!-- Accordion card -->
+                            <div class="card">
+
+                                <!-- Card header -->
+                                <div class="card-header rgba-stylish-strong z-depth-1 mb-1" role="tab" id="heading2">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse2" aria-expanded="false" aria-controls="collapse2" style="text-decoration: none; color: #000">
+                                        <h3 class="mb-0 white-text text-uppercase font-thin abc">
+                                            Client Servicing Executive
+                                            <p class="designation"> <br>Client Servicing / Executive<img src="{% static 'finity_techserv_portfolio_website_app/img/icons/dw.png' %}" style="float: right;height=30px;width:20px;color: #000"></p>
+
+                                        </h3>
+                                    </a>
+                                </div>
+
+                                <!-- Card body -->
+                                <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2" data-parent="#accordionEx7">
+                                    <div class="card-body mb-1 rgba-grey-light white-text">
+                                        <div class="container">
+                                            <button class="btn btn-sm formbutton" style="background: #ff3333;border-color: #ff3333;color: #fff ;float: right" data-target="#exampleModal" data-toggle="modal">Apply Now<span class="c-ripple js-ripple"><span class="c-ripple__circle"></span></span></button>
+
+
+                                            <b>About the role</b>
+                                            <ul>
+                                                <li>Develop and maintain existing client relationships</li>
+                                                <li>Manage the Social media accounts and ORM for the brands</li>
+                                                <li>Present solutions to clients and negotiate price optimally</li>
+                                                <li>Identify key business and clinical challenges</li>
+                                                <li>Arranging and attending meetings with the clients on regular basis</li>
+                                                <li>Working on pitches, along with the internal teams, to get new business</li>
+                                                <li>Working within deadlines for the client requirements</li>
+                                                <li>Meeting and liaising with clients to discuss and identify their advertising requirements</li>
+                                            </ul>
+                                            <hr>
+                                            <b>Preferred Qualifications</b>
+                                            <ul>
+                                                <li>Graduation in Media, Marketing or relevant field</li>
+                                            </ul>
+                                            <hr>
+                                            <b>Experience</b>
+                                            <ul>
+                                                <li>1-2 years</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion card -->
+
+                            <!-- Accordion card -->
+                            <div class="card">
+
+                                <!-- Card header -->
+                                <div class="card-header rgba-stylish-strong z-depth-1 mb-1" role="tab" id="heading3">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse3" aria-expanded="false" aria-controls="collapse3" style="text-decoration: none;color: #000">
+                                        <h3 class="mb-0 white-text text-uppercase font-thin abc">
+                                            Copywriter
+                                            <p class="designation"> <br>Content / Executive<img src="{% static 'finity_techserv_portfolio_website_app/img/icons/dw.png' %}" style="float: right;height=30px;width:20px;color: #000"></p>
+                                        </h3>
+                                    </a>
+                                </div>
+
+                                <!-- Card body -->
+                                <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3" data-parent="#accordionEx7">
+                                    <div class="card-body mb-1 rgba-grey-light white-text">
+                                        <div class="container">
+                                            <button class="btn btn-sm formbutton" style="background: #ff3333;border-color: #ff3333;color: #fff ;float: right" data-target="#exampleModal" data-toggle="modal">Apply Now<span class="c-ripple js-ripple"><span class="c-ripple__circle"></span></span></button>
+
+
+                                            <b>About the role</b>
+                                            <ul>
+                                                <li>Writing creative copy for Social Media posts and provide creative solutions for the clients, inhouse and new business needs</li>
+                                                <li>Thinking creatively to produce new ideas and concepts across media</li>
+                                                <li>Should have an impeccable knowledge of the English language with perfect grasp of grammar and spellings</li>
+                                                <li>He/She must have the ability to understand the client's brief and the concept</li>
+                                                <li>Should be able to think of new ideas and should be extremely creative</li>
+                                            </ul>
+                                            <hr>
+                                            <b>Preferred Qualifications</b>
+                                            <ul>
+                                                <li>Graduate with an inclination towards copywriting</li>
+                                            </ul>
+                                            <hr>
+                                            <b>Experience</b>
+                                            <ul>
+                                                <li>1-2 years</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion card -->
+                        </div>
+                        <!--/.Accordion wrapper-->
+
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Submit Your Resume</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="{% url 'finity_techserv_portfolio_website_app:careersubmit' %}" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                        <div class="form-group">
+                            <label for="fullname">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fullname">Phone</label>
+                            <input type="text" class="form-control" id="phone" name="phone" placeholder=" Phone Number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fullname">Upload your resume</label>
+                            <input type="file" class="form-control" id="myfile" name="myfile" placeholder="Upload resume file(PDF/DOC/DOCX)" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Tell us a little about yourself</label>
+                            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Something about yourself"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-block" style="color: #fff;background: #ff3333;border: 0" type="submit" id="submit" name="submit">Submit</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <aside class="content-block bg-gray-light">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-8 bottom-space-small-only">
+                    <h1 style="color: #ff3333">Found No Opening?</h1>
+                    <h5 style="color: #ff3333">Submit your resume and we'll keep it on file</h5>
+                </div>
+                <div class="col-sm-4 bottom-space">
+                    <button class="btn has-radius-huge formbutton" style="background: #ff3333;border-color: #ff3333;color: #fff" data-target="#exampleModal" data-toggle="modal">Submit<span class="c-ripple js-ripple"><span class="c-ripple__circle"></span></span></button>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+</main>
+
+{% endblock %}
+
+{% block extrascript %}
+
+{% endblock extrascript %}

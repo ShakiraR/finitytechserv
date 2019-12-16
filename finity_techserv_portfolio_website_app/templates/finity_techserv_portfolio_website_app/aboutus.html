@@ -1,0 +1,162 @@
+{% extends 'finity_techserv_portfolio_website_app/base_1.html' %}
+{% load static %}
+
+{% block stylesheets %}
+
+{% endblock stylesheets %}
+
+{% block headscript %}
+{% endblock headscript %}
+
+{% block content %}
+<main>
+    <!-- visual/banner of the page -->
+    <section class="visual">
+        <div class="visual-inner about-banner parallax" data-stellar-background-ratio="0.55">
+            <div class="centered">
+                <div class="container">
+                    <div class="visual-text visual-center">
+                        <h1 class="visual-title visual-sub-title">About Us</h1>
+                        <div class="breadcrumb-block">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{% url 'finity_techserv_portfolio_website_app:index' %}"> Home </a></li>
+                                <li class="breadcrumb-item active"> About Us </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/visual/banner of the page -->
+    <!-- main content wrapper -->
+    <div class="content-wrapper">
+        <section class="content-block">
+            <div class="container text-center">
+                <div class="heading bottom-space">
+                    <h2 style="color: #ff3333">Dream. <span style="color: #ff3333">Create.</span> Deliver</h2>
+                </div>
+                <div class="description">
+                    <p style="color: #000">At Finity, we design solutions that bring our clients closer to their goals. Closer to their dream. And we deliver what we promise. Always. </p>
+                </div>
+            </div>
+        </section>
+        <section class="content-block p-0">
+            <div class="container-fluid">
+                <div class="content-slot alternate-block">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="bg-stretch img-wrap wow slideInLeft">
+                                <img src="{% static 'finity_techserv_portfolio_website_app/img/About_2.png' %}" alt="images">
+                            </div>
+                        </div>
+                        <div class="col col-lg-6">
+                            <div class="text-wrap text-black">
+                                <h3 style="color: #ff3333">Digital experts working for you.</h3>
+                                <p>Creativity isn't just a niche; it's something all digital marketers need to have if they want to succeed. It's your secret weapon that allows you to outsmart the competition and create something that lasts.</p>
+                                <p>Ultimately it's what brands and clients look for when they come to us for their marketing solutions.</p>
+                                <p>We believe human experiences drive business. At Finity, our digital strategy establishes ‘human experience’ as the principal benchmark to find useful and desirable outcomes for our clients and their customers. We draw upon logic, user behavior and systemic reasoning to match people’s needs with what is technologically feasible. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="bg-stretch img-wrap wow slideInRight">
+                                <img src="{% static 'finity_techserv_portfolio_website_app/img/About_3.png' %}" alt="images">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="text-wrap text-black">
+                                <h3 style="color: #ff3333">Being a perfectionist.</h3>
+                                <p>We all know someone who needs everything to be “Just right.” Well, that's us! </p>
+                                <p>We believe, “Perfectionism is not the same thing as just striving to be our best. It’s also about healthy achievement and goals”.</p>
+                                <p>We aspire to become a leader in advancing businesses through digital means. Customer satisfaction, openness, innovation, teamwork and growth, are the core values behind our company, and continue to reflect who we are, how we work, and what we strive for. </p>
+                                <p>Blending our experience with technology and style, our bespoke website design and development services are aimed to boost your conversions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="bg-stretch img-wrap wow slideInLeft">
+                                <img src="{% static 'finity_techserv_portfolio_website_app/img/About_4.png' %}" alt="images">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="text-wrap text-black">
+                                <h3 style="color: #ff3333">Leave no stone unturned.</h3>
+                                <p>Finity, A new breed of thinkers, driven to create. </p>
+                                <p>Developing a motivating website is much more than creative extravaganza. It needs a thorough understanding of business objectives, consumer psychology and industry best practices.</p>
+                                <p>At Finity, we have a team of ace professionals with a passion for creating motivating, interesting designs to keep your customers engaged and keep them coming for more. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-block aboutquot-block bg-gray-light" data-stellar-background-ratio="0.55">
+            <div class="container">
+                <div class="inner-wrapper">
+                    <h3 class="block-top-heading" style="color: #ff3333">BEST EVER DESIGN</h3>
+                    <h2 class="" style="color: #ff3333">Time to enhance your web presence!</h2>
+                    <div class="btn-container">
+                        <a href="#" class="btn btn-primary" data-target="#exampleModal" data-toggle="modal">GET QUOTATION</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Button trigger modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Get Instant Quotation</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label for="fullname">Your Name</label>
+                                <input type="text" class="form-control" id="" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="number">Phone</label>
+                                <input type="text" class="form-control" id="" placeholder=" Phone Number" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="resume">Upload your resume</label>
+                                <input type="text" class="form-control" id="" placeholder="Business Sector" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="" rows="3" placeholder="Message"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-block" style="color: #fff;background: #ff3333;border: 0">Get Quotation</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--/main content wrapper -->
+</main>
+{% endblock %}
+
+{% block extrascript %}
+
+{% endblock extrascript %}

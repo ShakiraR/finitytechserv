@@ -11,5 +11,18 @@ class CustomUser(AbstractUser):
     )
     user_role = models.PositiveSmallIntegerField(choices=ROLE_CHOICES,default=ADMIN)
 
+class Contact(models.Model):
+  FirstName = models.CharField(max_length=264,blank=False)
+  LastName = models.CharField(max_length=264,blank=False)
+  PhoneNo = models.CharField(max_length=264,blank=False)
+  Email = models.EmailField(max_length=264,blank=False)
+  Message = models.CharField(max_length=500,blank=False)
+
+class Career(models.Model):  
+  Name = models.CharField(max_length=264,blank=False)
+  Email = models.EmailField(max_length=264,blank=False)
+  PhoneNo = models.CharField(max_length=264,blank=False)
+  Resume =  models.FileField(upload_to='documents/')
+  Message = models.CharField(max_length=500,blank=False)
 
 

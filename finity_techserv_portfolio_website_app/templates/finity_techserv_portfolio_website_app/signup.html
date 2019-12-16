@@ -1,4 +1,4 @@
-{% extends 'finity_techserv_portfolio_website_app/base2.html' %}
+{% extends 'finity_techserv_portfolio_website_app/base_2.html' %}
 {% load static %}
 
 {% block stylesheets %}
@@ -15,31 +15,32 @@
         <div class="row no-gutters">
             <div class="col-lg-6 hidden-md-down">
                 <div class="bg-stretch img-wrap">
-                    <img src="{% static 'finity_techserv_portfolio_website_app/img/visual-12.jpg' %}" alt="images">
+                    <img src="{% static 'finity_techserv_portfolio_website_app/img/Register.png' %}" alt="images">
                 </div>
             </div>
             <div class="col-lg-6 signup-block">
                 <div class="signup-wrap text-center">
-                    <div class="inner-wrap"><br><br><br><br>
+                    <div class="inner-wrap"><br><br>
                         <div class="circular-icon bottom-space"><i class="icon-user-outline"></i></div>
                         <form action="#" method="post" id="contact_form" class="waituk_contact-form signup-form">
-                            <h2 class="bottom-space">Be a Part of Finity TechServ</h2>
+                        {% csrf_token %}
+                            <h2 class="bottom-space">Request Finity For Password</h2>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="email" placeholder="EMAIL ADDRESS" id="con_email" name="con_fname" class="form-control">
+                                        <input type="email" placeholder="EMAIL ADDRESS" id="email" name="email" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="password" placeholder="PASSWORD" id="con_password" name="con_lname" class="form-control">
+                                        <input type="password" placeholder="PASSWORD" id="password" name="password" class="form-control">
                                     </div>
                                 </div>
                             </div>
-                            <p>By clicking on the “Create Account” button below, you are agreeing to
-                                <a href="#"> our terms of services. </a></p>
+                            <p style="color: #000">By clicking on the “Create Account” button below, you are agreeing to
+                                <a href="#" style="color: #ff3333"> our terms of services. </a></p>
                             <div class="btn-container mt-xl-5 mt-lg-2">
-                                <button id="btn_sent" class="btn btn-primary has-radius-small">CREATE ACCOUNT</button>
+                                <button id="btn_sent" class="btn has-radius-small">CREATE ACCOUNT</button>
                             </div>
                         </form>
                     </div>
@@ -51,5 +52,7 @@
 </main>
 {% endblock %}
 
-{% block script %}
-{% endblock %}
+
+{% block extrascript %}
+
+{% endblock extrascript %}

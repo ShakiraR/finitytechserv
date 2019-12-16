@@ -119,31 +119,32 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form action="#" method="post">
+                        <form action="{% url 'finity_techserv_portfolio_website_app:Quotationsubmit' %}" method="post">
+                        {% csrf_token %}
                             <div class="form-group">
                                 <label for="fullname">Your Name</label>
-                                <input type="text" class="form-control" id="" placeholder="Your Name" required>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email" required>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
                             </div>
                             <div class="form-group">
                                 <label for="number">Phone</label>
-                                <input type="text" class="form-control" id="" placeholder=" Phone Number" required>
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder=" Phone Number" required>
                             </div>
 
                             <div class="form-group">
                                 <label for="resume">Upload your resume</label>
-                                <input type="text" class="form-control" id="" placeholder="Business Sector" required>
+                                <input type="text" class="form-control" id="BusinessSector" name="BusinessSector" placeholder="Business Sector" required>
                             </div>
 
                             <div class="form-group">
                                 <label for="message">Message</label>
-                                <textarea class="form-control" id="" rows="3" placeholder="Message"></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="3" placeholder="Message"></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-block" style="color: #fff;background: #ff3333;border: 0">Get Quotation</button>
+                            <button type="submit" id="submit" name="submit" class="btn btn-block" style="color: #fff;background: #ff3333;border: 0">Get Quotation</button>
 
                         </form>
 

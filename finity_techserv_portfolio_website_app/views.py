@@ -3,7 +3,7 @@ from django.shortcuts import render
 from django.shortcuts import HttpResponseRedirect
 from django.urls import reverse_lazy, reverse
 from django.contrib.auth import login, logout, authenticate
-from finity_techserv_portfolio_website_app.models import CustomUser,Contact,Career
+from finity_techserv_portfolio_website_app.models import CustomUser,Contact,Career,Quotation
 from django.contrib.auth.hashers import make_password
 from django.core.files.storage import FileSystemStorage
 
@@ -111,5 +111,38 @@ def careersubmit(request):
         return HttpResponseRedirect(reverse('finity_techserv_portfolio_website_app:career'))                              
 
 
-
+def Quotationform(request):
+    data = { }
+    return render(request, 'finity_techserv_portfolio_website_app/aboutus.html', data)
     
+def Quotationsubmit(request):
+    if request.method == "POST":
+        Name = request.POST['name']
+        Email = request.POST['email']
+        PhoneNo = request.POST['phone']
+        BusinessSector = request.POST['BusinessSector']
+        Message = request.POST['message']
+        Quotation.objects.create(Name = Name,
+                               Email = Email,
+                               PhoneNo = PhoneNo,
+                               BusinessSector = BusinessSector,
+                               Message = Message)
+        return HttpResponseRedirect(reverse('finity_techserv_portfolio_website_app:Quotation'))
+
+def QuotationIndexform(request):
+    data = { }
+    return render(request, 'finity_techserv_portfolio_website_app/index.html', data)
+    
+def QuotationIndexsubmit(request):
+    if request.method == "POST":
+        Name = request.POST['name']
+        Email = request.POST['email']
+        PhoneNo = request.POST['phone']
+        BusinessSector = request.POST['BusinessSector']
+        Message = request.POST['message']
+        Quotation.objects.create(Name = Name,
+                               Email = Email,
+                               PhoneNo = PhoneNo,
+                               BusinessSector = BusinessSector,
+                               Message = Message)
+        return HttpResponseRedirect(reverse('finity_techserv_portfolio_website_app:QuotationIndex'))                                      

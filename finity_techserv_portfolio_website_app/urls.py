@@ -32,6 +32,14 @@ urlpatterns = [
     #submit url
     path('career/',views.careerform,name='career'),
 
+    path('quotationForm/',views.Quotationform,name='Quotation'),
+
+    path('Quotationsubmit/',views.Quotationsubmit,name='Quotationsubmit'),
+
+    path('quotationIndexForm/',views.QuotationIndexform,name='QuotationIndex'),
+
+    path('Quotationsubmit/',views.QuotationIndexsubmit,name='QuotationIndexsubmit'),
+
 
     
 ]

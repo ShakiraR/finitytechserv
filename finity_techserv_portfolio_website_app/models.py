@@ -25,4 +25,11 @@ class Career(models.Model):
   Resume =  models.FileField(upload_to='documents/')
   Message = models.CharField(max_length=500,blank=False)
 
+class Quotation(models.Model):  
+  Name = models.CharField(max_length=264,blank=False)
+  Email = models.EmailField(max_length=264,blank=False)
+  PhoneNo = models.CharField(max_length=264,blank=False)
+  BusinessSector = models.CharField(max_length=500,blank=False) 
+  Message = models.CharField(max_length=500,blank=False)  
+
 
